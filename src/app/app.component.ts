@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NgtCanvas, NgtCanvasContent } from 'angular-three/dom';
-import { Experience } from './experience/experience.component';
+import { NgtCanvas } from 'angular-three/dom';
+import { Experience } from './experience/experience';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,6 @@ import { Experience } from './experience/experience.component';
     </ngt-canvas>
   `,
   host: { class: 'block h-dvh w-full' },
-  imports: [NgtCanvas, NgtCanvasContent, Experience],
+  imports: [NgtCanvas, Experience],
 })
 export class AppComponent {}
